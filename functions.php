@@ -117,7 +117,7 @@ add_action( 'wp_footer', 'ashuwp_deregister_scripts' );
 /**利用wp_head和wp_footer引入css和js**/
 function ashuwp_scripts_styles() {
   //css
-  wp_enqueue_style( 'theme_custom_style', get_template_directory_uri().'/css/normalize.css', array(), '1.0' );
+  wp_enqueue_style( 'normalize', get_template_directory_uri().'/css/normalize.css', array(), '1.0' );
   wp_enqueue_style( 'theme_custom_style', get_stylesheet_uri(), array(), '1.0' );
   
   //js
